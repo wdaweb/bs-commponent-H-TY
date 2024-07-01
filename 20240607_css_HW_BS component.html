@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Document</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* :root {
+      --bs-self_green-rgb: 19, 216, 45
+    }
+
+    .bg-self_green {
+      --bs-bg-opacity: 1;
+      background-color: rgba(var(--bs-self_green-rgb), var(--bs-bg-opacity)) !important;
+    } */
+
+    .btn-self_green {
+      --bs-btn-color: #fff;
+      --bs-btn-bg: #0eaf24;
+      --bs-btn-border-color: #16a829;
+      --bs-btn-hover-color: #fff;
+      --bs-btn-hover-bg: #157347;
+      --bs-btn-hover-border-color: #146c43;
+      --bs-btn-focus-shadow-rgb: 60, 153, 110;
+      --bs-btn-active-color: #fff;
+      --bs-btn-active-bg: #146c43;
+      --bs-btn-active-border-color: #13653f;
+      --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+      --bs-btn-disabled-color: #fff;
+      --bs-btn-disabled-bg: #198754;
+      --bs-btn-disabled-border-color: #198754;
+    }
+
+    .gray {
+      background-color: #e9ecef;
+    }
+
+    .Ldarkergray {
+      background-color: #d7dfe7;
+    }
+
+    .darkergray {
+      background-color: #495057;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 導覽列 (Navbar) -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">泰山咖啡莊園</a>
+
+      <!-- 漢堡按鈕 -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- 漢堡鈕摺疊的內容 -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">菜單餐點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">周邊景點</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">莊園位置</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">聯絡我們</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">咖啡故事</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 輪播欄位 -->
+  <div id="carousel">
+    <div id="car" class="carousel slide" data-bs-ride="carousel">
+
+      <!-- 指示器（下方的3個長方形） -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#car" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#car" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#car" data-bs-slide-to="2"></button>
+      </div>
+
+      <!-- 圖片區 -->
+      <div class=" carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://picsum.photos/1920/800/?random=1" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/800/?random=2" class="d-block w-100">
+        </div>
+        <div class="carousel-item">
+          <img src="https://picsum.photos/1920/800/?random=3" class="d-block w-100">
+        </div>
+      </div>
+
+      <!-- 前一頁 -->
+      <button class=" carousel-control-prev" type="button" data-bs-target="#car" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <!-- 下一頁 -->
+      <button class="carousel-control-next" type="button" data-bs-target="#car" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- 3張卡片區 -->
+  <div id="img" class="p-3 p-sm-5 d-flex flex-wrap flex-sm-nowrap justify-content-center" style="width: 100%;">
+    <div class="row justify-content-center">
+      <div class="col-sm-4">
+        <div class="card mb-4" style="width: 100%;">
+          <img src="https://picsum.photos/1920/1000/?random=4" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text fs-5">行為本身得到穩定發。</p>
+            <p class="card-text">幹部引進非常備案我會全身出版社前面，引起版本我在不夠，非常聊天是指，必須刷新提示老婆好好回應國內外。精神糖尿病日常可見演唱會慢慢記得，望着。
+              製品情人他就錯誤使得新浪留在此外僅僅自我，某個體育總算，理。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card mb-4" style="width: 100%;">
+          <img src="https://picsum.photos/1920/1000/?random=4" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text fs-5">行為本身得到穩定發。</p>
+            <p class="card-text">幹部引進非常備案我會全身出版社前面，引起版本我在不夠，非常聊天是指，必須刷新提示老婆好好回應國內外。精神糖尿病日常可見演唱會慢慢記得，望着。
+              製品情人他就錯誤使得新浪留在此外僅僅自我，某個體育總算，理。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-sm-4">
+        <div class="card mb-4" style="width: 100%;">
+          <img src="https://picsum.photos/1920/1000/?random=4" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text fs-5">行為本身得到穩定發。</p>
+            <p class="card-text">幹部引進非常備案我會全身出版社前面，引起版本我在不夠，非常聊天是指，必須刷新提示老婆好好回應國內外。精神糖尿病日常可見演唱會慢慢記得，望着。
+              製品情人他就錯誤使得新浪留在此外僅僅自我，某個體育總算，理。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Coffee Shop 區 -->
+  <section class="container-fluid">
+    <div class="row d-flex justify-content-between align-items-center gray">
+      <div class="col-sm-6 p-0">
+        <div class="card rounded-0">
+          <img src="https://picsum.photos/800/600/?random=5" class="object-fit-contain">
+        </div>
+      </div>
+      <div class="col-sm-6 p-0">
+        <div class="card-body text-center p-5">
+          <h5 class="card-title">Coffee Shop</h5>
+          <p class="card-text py-3 d-block">近年來人大放心製造傳來天地人生開發商聊天委託很多營養理論，說了思想打電話發現俱樂部，手續文檔許多保。文明建材小時足夠德國，評價專輯哪個效率關注寫作大聲熱線直接肯定用途用途足球望着市場價，剛才是的放棄太多試驗聊天心靈當前位置，表現立即接觸顧問部隊排名由於兩次身份樂隊雜誌。</p>
+          <a href="#" class="btn btn-self_green">VIEW COLLECTION</a>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex flex-sm-row-reverse justify-content-between align-items-center gray">
+      <div class="col-sm-6 p-0">
+        <div class="card rounded-0">
+          <img src="https://picsum.photos/800/600/?random=5" class="object-fit-fill img-fluid">
+        </div>
+      </div>
+      <div class="col-sm-6 p-0">
+        <div class="card-body text-center p-5">
+          <h5 class="card-title">Coffee Shop</h5>
+          <p class="card-text py-3 d-block">近年來人大放心製造傳來天地人生開發商聊天委託很多營養理論，說了思想打電話發現俱樂部，手續文檔許多保。文明建材小時足夠德國，評價專輯哪個效率關注寫作大聲熱線直接肯定用途用途足球望着市場價，剛才是的放棄太多試驗聊天心靈當前位置，表現立即接觸顧問部隊排名由於兩次身份樂隊雜誌。</p>
+          <a href="#" class="btn btn-self_green">VIEW COLLECTION</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 地圖區 -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.7036499805677!2d121.41694067537684!3d25.04412927780987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a7bec9ad74b1%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1718606906325!5m2!1szh-TW!2stw" width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class=""></iframe>
+
+  <!-- 表格區 -->
+  <section>
+    <form class="p-4 gray">
+      <div class="title text-center">
+        <form class="row g-3 p-4 gray">
+          <h1 class="fs-1 mt-4">聯絡我們</h1>
+          <p class="fs-3 m-0">泰山咖啡莊園，傳承熱情 coding 精神</p>
+          <p class="m-0">任何服務問題或意見，歡迎您透過客服表單告知我們，謝謝！</p>
+      </div>
+
+      <div class="d-flex flex-wrap">
+        <!-- 姓名 -->
+        <div class="col-12 col-sm-6 mt-3 pe-sm-3">
+          <label for="inputName" class="form-label">姓名</label>
+          <div class="d-flex flex-nowrap">
+            <input type="name" class="form-control rounded-start-2 rounded-end-0" id="inputName">
+            <!-- 稱呼選擇按鈕 -->
+            <div class="col-2 Ldarkergray d-flex justify-content-center align-items-center gap-2">
+              <label class="form-check-label" for="inlineRadio1">先生</label>
+              <input type="radio" class="form-check-input" value="先生" name="gender">
+            </div>
+            <div class="col-2 Ldarkergray d-flex justify-content-center align-items-center gap-2 rounded-end-2">
+              <label class="form-check-label" for="inlineRadio2">女士</label>
+              <input type="radio" class="form-check-input" value="女士" name="gender">
+            </div>
+          </div>
+        </div>
+
+        <!-- 電話 -->
+        <div class="col-12 col-sm-6 mt-3 ps-sm-3">
+          <label for="inputTel" class="form-label">電話</label>
+          <input type="text" class="form-control" id="inputTel">
+        </div>
+        <!-- 電子信箱 -->
+        <div class="col-12 col-sm-6 mt-3 pe-sm-3">
+          <label for="inputEmail" class="form-label">電子信箱</label>
+          <input type="email" class="form-control" id="inputEmail">
+        </div>
+        <!-- 問題類型選擇欄位 -->
+        <div class="col-12 col-sm-6 mt-3 ps-sm-3">
+          <label for="inputAddress2" class="form-label">問題類型</label>
+          <select class="form-select dropdown dropup">
+            <option selected>餐飲建議</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <!-- 意見需求欄位 -->
+        <div class="col-12 mt-3">
+          <label for="exampleFormControlTextarea1" class="form-label">意見需求</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+        </div>
+        <!-- 勾選方塊 -->
+        <div class="col-sm-6  mt-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              訂閱泰山莊園最新資訊
+            </label>
+          </div>
+        </div>
+        <!-- 送出按鈕 -->
+        <div class="col-12 text-center mt-5">
+          <button type="submit" class="btn darkergray text-white">送出</button>
+        </div>
+      </div>
+    </form>
+
+
+    <!-- footer -->
+    <section class="bg-black">
+      <div class="container pt-5 text-white flex-wrap d-flex justify-content-center align-item-center">
+        <div class="row row-cols-2 row-cols-sm-4 mb-3 px-3">
+          <div class="col-6 text-center">
+            <div>
+              <img class="rounded-circle" src="https://picsum.photos/130/130/?random=1">
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row row-cols-1">
+              <div class="col fw-bold mb-2">Address</div>
+              <div class="col">1234 Street Name</div>
+              <div class="col">City, AA 99999</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row row-cols-1">
+              <div class="col fw-bold mb-2">Links</div>
+              <div class="col">Website builder</div>
+              <div class="col">Download for Windows</div>
+              <div class="col">Download for Mac</div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row row-cols-1">
+              <div class="col fw-bold mb-2">Contacts</div>
+              <div class="col">Email:support@mobirise.com</div>
+              <div class="col">Phone: +1 (0) 000 0000 0001</div>
+              <div class="col">Fax: +1 (0) 000 0000 002</div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col">©Copyright 2021 KaiFu Change - All Rights Reserved</div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
